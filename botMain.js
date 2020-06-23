@@ -48,9 +48,7 @@ function clearBotMsg()
 }
 
 client.on('presenceUpdate', (oldmem, newmem) => {
-    const oldname = oldmem.user.username;
     const newname = newmem.user.username;
-    const oldstat = oldmem.status;
     const newstat = newmem.status;
 
     sevrLog(`${newname} is ${newstat}`);
